@@ -8,52 +8,51 @@
     android:background="#F6F1F1"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_headline"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:text="Discover Bali: A Journey Through Paradise"
-        android:textSize="24sp"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bg_main"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_headline" />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/tv_trip_recommendation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="16dp"
-        android:text="Trip Recommendation"
-        android:textColor="#333333"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_tours"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_trip_recommendation" />
+            <TextView
+                android:id="@+id/tv_headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover Bali: A Journey Through Paradise"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_main"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tv_trip_recommendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip Recommendation"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_tours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
