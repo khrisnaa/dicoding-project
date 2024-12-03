@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="180dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/uluwatu"
+            android:src="@drawable/image_4"
             android:background="@drawable/rounded_image"
             android:clipToOutline="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:layout_marginEnd="4dp"
-                    android:src="@drawable/location"
+                    android:src="@drawable/ic_location"
                     app:tint="#808080" />
 
                 <TextView
@@ -97,7 +97,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:layout_marginEnd="4dp"
-                    android:src="@drawable/schedule"
+                    android:src="@drawable/ic_schedule"
                     app:tint="#808080" />
 
                 <TextView
@@ -121,7 +121,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:layout_marginEnd="4dp"
-                    android:src="@drawable/hotel_class"
+                    android:src="@drawable/ic_rating"
                     app:tint="#FFA41B" />
 
                 <TextView
