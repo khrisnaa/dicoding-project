@@ -78,7 +78,7 @@
         <item>Manta Point is a famous dive spot in Nusa Penida, where you can swim with manta rays.</item>
     </string-array>
 
-    <string-array name="tour_photos">
+    <integer-array name="tour_photos">
         <item>@drawable/uluwatu_1</item>
         <item>@drawable/monkey_forest_1</item>
         <item>@drawable/tanah_lot_1</item>
@@ -90,6 +90,6 @@
         <item>@drawable/sekumpul_waterfall_1</item>
         <item>@drawable/manta_point_1</item>
 
-    </string-array>
+    </integer-array>
 
 </resources>

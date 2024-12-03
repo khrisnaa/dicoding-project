@@ -11,5 +11,5 @@ data class Tour(
     val time: String,
     val rating: String,
     val description: String,
-    val photo: String
+    val photo: Int
 ) : Parcelable
