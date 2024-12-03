@@ -1,3 +1,95 @@
 <resources>
     <string name="app_name">FinalProject</string>
+    <string-array name="tour_names">
+        <item>Uluwatu Temple</item>
+        <item>Monkey Forest</item>
+        <item>Tanah Lot</item>
+        <item>Mount Batur</item>
+        <item>Nusa Penida</item>
+        <item>Jatiluwih</item>
+        <item>Besakih Temple</item>
+        <item>Tirta Empul</item>
+        <item>Sekumpul Waterfall</item>
+        <item>Manta Point</item>
+    </string-array>
+
+    <string-array name="tour_locations">
+        <item>Uluwatu, Bali</item>
+        <item>Ubud, Bali</item>
+        <item>Tabanan, Bali</item>
+        <item>Kintamani, Bali</item>
+        <item>Nusa Penida, Bali</item>
+        <item>Tabanan, Bali</item>
+        <item>Karangasem, Bali</item>
+        <item>Gianyar, Bali</item>
+        <item>Singaraja, Bali</item>
+        <item>Nusa Penida, Bali</item>
+    </string-array>
+
+    <string-array name="tour_prices">
+        <item>IDR 200.000</item>
+        <item>IDR 150.000</item>
+        <item>IDR 250.000</item>
+        <item>IDR 350.000</item>
+        <item>IDR 700.000</item>
+        <item>IDR 300.000</item>
+        <item>IDR 400.000</item>
+        <item>IDR 150.000</item>
+        <item>IDR 100.000</item>
+        <item>IDR 500.000</item>
+    </string-array>
+
+    <string-array name="tour_times">
+        <item>Half Day</item>
+        <item>Half Day</item>
+        <item>Half Day</item>
+        <item>1 Day</item>
+        <item>2 Days</item>
+        <item>1 Day</item>
+        <item>1 Day</item>
+        <item>Half Day</item>
+        <item>Half Day</item>
+        <item>1 Day</item>
+    </string-array>
+
+    <string-array name="tour_ratings">
+        <item>4.5</item>
+        <item>4.2</item>
+        <item>4.7</item>
+        <item>4.8</item>
+        <item>4.9</item>
+        <item>4.6</item>
+        <item>4.4</item>
+        <item>4.3</item>
+        <item>4.5</item>
+        <item>4.7</item>
+    </string-array>
+
+    <string-array name="tour_descriptions">
+        <item>The Uluwatu Temple is a stunning sea temple perched on a cliff with a breathtaking view of the Indian Ocean.</item>
+        <item>Visit the Sacred Monkey Forest in Ubud, home to hundreds of playful long-tailed macaques.</item>
+        <item>Tanah Lot is one of Bali iconic sea temples, known for its incredible sunset views.</item>
+        <item>Climb Mount Batur for a spectacular sunrise view from an active volcano.</item>
+        <item>Explore Nusa Penida’s stunning beaches, cliffs, and crystal-clear waters.</item>
+        <item>Jatiluwih offers magnificent terraced rice fields with breathtaking mountain views.</item>
+        <item>Besakih Temple is Bali’s Mother Temple, located on the majestic Mount Agung.</item>
+        <item>Tirta Empul is a sacred water temple where visitors can participate in a purification ritual.</item>
+        <item>Sekumpul Waterfall is one of the most beautiful waterfalls in Bali, surrounded by lush green nature.</item>
+        <item>Manta Point is a famous dive spot in Nusa Penida, where you can swim with manta rays.</item>
+    </string-array>
+
+    <string-array name="tour_photo">
+        <item>@drawable/uluwatu_1</item>
+        <item>@drawable/monkey_forest_1</item>
+        <item>@drawable/tanah_lot_1</item>
+        <item>@drawable/mount_batur_1</item>
+        <item>@drawable/nusa_penida_1</item>
+        <item>@drawable/jatiluwih_1</item>
+        <item>@drawable/besakih_1</item>
+        <item>@drawable/tirta_empul_1</item>
+        <item>@drawable/sekumpul_waterfall_1</item>
+        <item>@drawable/manta_point_1</item>
+
+    </string-array>
+
 </resources>
