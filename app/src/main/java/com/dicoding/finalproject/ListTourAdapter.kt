@@ -1,5 +1,6 @@
 package com.dicoding.finalproject
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +16,7 @@ class ListTourAdapter(private val listTour: ArrayList<Tour>) :
         val tvName: TextView = itemView.findViewById(R.id.tv_card_name)
         val tvLocation: TextView = itemView.findViewById(R.id.tv_card_location)
         val tvPrice: TextView = itemView.findViewById(R.id.tv_card_price)
-        val tvTime: TextView = itemView.findViewById(R.id.tv_card_time)
+        val tvDuration: TextView = itemView.findViewById(R.id.tv_card_duration)
         val tvRating: TextView = itemView.findViewById(R.id.tv_card_rating)
     }
 
@@ -35,8 +36,14 @@ class ListTourAdapter(private val listTour: ArrayList<Tour>) :
         holder.tvName.text = name
         holder.tvLocation.text = location
         holder.tvPrice.text = price
-        holder.tvTime.text = time
+        holder.tvDuration.text = time
         holder.tvRating.text = rating
+
+        holder.itemView.setOnClickListener{
+            val intentDetail = Intent(holder.itemView.context, DetailActivity::class.java)
+            intentDetail.putExtra("key_tour", listTour[holder.adapterPosition])
+            holder.itemView.context.startActivity(intentDetail)
+        }
     }
 
 }

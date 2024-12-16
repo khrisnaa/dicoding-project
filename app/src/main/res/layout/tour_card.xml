@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="IDR 5.000.000"
-                android:textColor="#19A7CE"
+                android:textColor="#F26B0F"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +85,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:id="@+id/layout_card_time"
+                android:id="@+id/layout_card_duration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -101,7 +101,7 @@
                     app:tint="#808080" />
 
                 <TextView
-                    android:id="@+id/tv_card_time"
+                    android:id="@+id/tv_card_duration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3 days"
@@ -115,7 +115,7 @@
                 android:layout_marginTop="4dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/layout_card_time">
+                app:layout_constraintTop_toBottomOf="@id/layout_card_duration">
 
                 <ImageView
                     android:layout_width="16dp"

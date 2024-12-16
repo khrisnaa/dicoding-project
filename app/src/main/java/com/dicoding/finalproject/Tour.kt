@@ -8,7 +8,7 @@ data class Tour(
     val name: String,
     val location: String,
     val price: String,
-    val time: String,
+    val duration: String,
     val rating: String,
     val description: String,
     val photo: Int
