@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">FinalProject</string>
+    <string name="app_name">WeBali Tour</string>
+    <string name="btn_text">Book Now</string>
+    <string name="about_description">About this tour</string>
+    <string name="about_location">Location</string>
+    <string name="about_rating">Rati</string>
+    <string name="username">Khrisna Dharma Pramana</string>
+    <string name="email">igdkhrisnaaa@gmail.com</string>
+    <string name="headline">Discover Bali: A Journey Through Paradise</string>
+    <string name="menu_title">Tour Recommendations</string>
+
     <string-array name="tour_names">
         <item>Uluwatu Temple</item>
         <item>Monkey Forest</item>
@@ -79,16 +88,16 @@
     </string-array>
 
     <integer-array name="tour_photos">
-        <item>@drawable/uluwatu_1</item>
-        <item>@drawable/monkey_forest_1</item>
-        <item>@drawable/tanah_lot_1</item>
-        <item>@drawable/mount_batur_1</item>
-        <item>@drawable/nusa_penida_1</item>
-        <item>@drawable/jatiluwih_1</item>
-        <item>@drawable/besakih_1</item>
-        <item>@drawable/tirta_empul_1</item>
-        <item>@drawable/sekumpul_waterfall_1</item>
-        <item>@drawable/manta_point_1</item>
+        <item>@drawable/uluwatu</item>
+        <item>@drawable/monkey_forest</item>
+        <item>@drawable/tanah_lot</item>
+        <item>@drawable/mount_batur</item>
+        <item>@drawable/nusa_penida</item>
+        <item>@drawable/jatiluwih</item>
+        <item>@drawable/besakih</item>
+        <item>@drawable/tirta_empul</item>
+        <item>@drawable/sekumpul_waterfall</item>
+        <item>@drawable/manta_point</item>
 
     </integer-array>
 

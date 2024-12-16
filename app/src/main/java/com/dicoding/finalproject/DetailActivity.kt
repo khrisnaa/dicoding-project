@@ -1,7 +1,9 @@
 package com.dicoding.finalproject
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.ViewOutlineProvider
 import android.widget.ImageView
 import android.widget.TextView
@@ -52,9 +54,13 @@ class DetailActivity : AppCompatActivity() {
             Toast.makeText(this, "Tour data is unavailable", Toast.LENGTH_SHORT).show()
         }
 
-
-
-
-
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val AboutIntent = Intent(this@DetailActivity, AboutActivity::class.java)
+        startActivity(AboutIntent)
+        return super.onOptionsItemSelected(item)
+    }
+
+
 }

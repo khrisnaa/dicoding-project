@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F1F1"
+    android:background="@color/secondary"
     tools:context=".MainActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -24,7 +24,7 @@
                 android:id="@+id/tv_headline"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Discover Bali: A Journey Through Paradise"
+                android:text="@string/headline"
                 android:textSize="24sp"
                 android:paddingHorizontal="12dp"
                 android:textAlignment="center"
@@ -43,9 +43,8 @@
                 android:id="@+id/tv_trip_recommendation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tour Recommendations"
+                android:text="@string/menu_title"
                 android:layout_marginTop="10dp"
-                android:textColor="#333333"
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:textStyle="bold"

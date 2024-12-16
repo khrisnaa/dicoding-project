@@ -6,6 +6,7 @@
     android:layout_margin="16dp"
     app:cardCornerRadius="12dp"
     android:elevation="8dp"
+    android:background="@color/secondary"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,7 +19,7 @@
             android:layout_width="0dp"
             android:layout_height="180dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/image_4"
+            android:src="@drawable/uluwatu"
             android:background="@drawable/rounded_image"
             android:clipToOutline="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +41,7 @@
                 android:id="@+id/tv_card_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Uluwatu Temple"
+                android:text="Tour name..."
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -59,14 +60,14 @@
                     android:layout_height="16dp"
                     android:layout_marginEnd="4dp"
                     android:src="@drawable/ic_location"
-                    app:tint="#808080" />
+                    app:tint="@color/gray" />
 
                 <TextView
                     android:id="@+id/tv_card_location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pecatu, Badung, Bali"
-                    android:textColor="#808080"
+                    android:text="Tour location..."
+                    android:textColor="@color/gray"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -75,13 +76,11 @@
                 android:id="@+id/tv_card_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="IDR 5.000.000"
-                android:textColor="#F26B0F"
+                android:text="Tour price..."
+                android:textColor="@color/primary"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-
-
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
@@ -98,14 +97,14 @@
                     android:layout_height="16dp"
                     android:layout_marginEnd="4dp"
                     android:src="@drawable/ic_schedule"
-                    app:tint="#808080" />
+                    app:tint="@color/gray" />
 
                 <TextView
                     android:id="@+id/tv_card_duration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3 days"
-                    android:textColor="#808080"
+                    android:text="Tour duration..."
+                    android:textColor="@color/gray"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -122,13 +121,13 @@
                     android:layout_height="16dp"
                     android:layout_marginEnd="4dp"
                     android:src="@drawable/ic_rating"
-                    app:tint="#FFA41B" />
+                    app:tint="@color/primary" />
 
                 <TextView
                     android:id="@+id/tv_card_rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4.7"
+                    android:text="Tour rating..."
                    android:textStyle="bold"
                     android:textSize="12sp" />
             </LinearLayout>

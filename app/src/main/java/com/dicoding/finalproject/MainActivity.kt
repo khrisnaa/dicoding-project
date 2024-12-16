@@ -1,6 +1,9 @@
 package com.dicoding.finalproject
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -50,9 +53,20 @@ class MainActivity : AppCompatActivity() {
         return listTour
     }
 
-    private fun showRecyclerList(){
+    private fun showRecyclerList() {
         rvTours.layoutManager = LinearLayoutManager(this)
         val listTourAdapter = ListTourAdapter(list)
         rvTours.adapter = listTourAdapter
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val AboutIntent = Intent(this@MainActivity, AboutActivity::class.java)
+        startActivity(AboutIntent)
+        return super.onOptionsItemSelected(item)
     }
 }
