@@ -3,6 +3,7 @@ package com.dicoding.finalproject
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import android.view.ViewOutlineProvider
 import android.widget.ImageView
@@ -54,6 +55,11 @@ class DetailActivity : AppCompatActivity() {
             Toast.makeText(this, "Tour data is unavailable", Toast.LENGTH_SHORT).show()
         }
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

@@ -6,54 +6,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutActivity"
-    android:background="@color/beige"
-   >
+    android:background="@color/beige">
 
-    <ImageView
-        android:id="@+id/img_about_banner"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:src="@drawable/about_banner"
-        android:scaleType="centerCrop"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <ImageView
-        android:id="@+id/img_about"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/circle_image"
-        android:clipToOutline="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/about"
-        app:layout_constraintBottom_toTopOf="@id/tv_about_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tv_about_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-medium"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/img_about" />
+            <ImageView
+                android:id="@+id/img_about_banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/about_banner"
+                android:scaleType="centerCrop" />
 
-    <TextView
-        android:id="@+id/tv_about_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:textSize="14sp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_about_name" />
+            <ImageView
+                android:id="@+id/img_about"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="-80dp"
+                android:background="@drawable/circle_image"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/about" />
+
+            <TextView
+                android:id="@+id/tv_about_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tv_about_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
